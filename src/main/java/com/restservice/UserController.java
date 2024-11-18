@@ -17,7 +17,9 @@ public class UserController {
 	private final AtomicLong counter = new AtomicLong();
 	private static final String sequence = "ACGCTAGC";
 	private List<String> dnaseqs =  Arrays.asList("ACTGCTAGCTAGCT", "ACTGCTAGCTAGCT",
-	"ACTGCTAGCTAGCT");
+	"ACTGCTAGCTAGCT", 
+	"ACTGCTAGCTAGCA",
+	"TCTGCTAGCTAGCA");
 
 	@GetMapping("/greeting")
 	public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
