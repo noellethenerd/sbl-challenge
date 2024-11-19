@@ -1,18 +1,41 @@
 # SBL Deduplication Coding Challenge
-## Spring Boot with Java for backend
 
-Load server at http://localhost:8080
+Deduplicate DNA sequences provided by API, and allow user to view possible thresholded matches as well.
+
+## Backend: Spring Boot & Java
+
+Here is where our DNA sequences live, are modified, and are served.
+
+To launch at http://localhost:8080
+
 `./mvnw spring-boot:run`
-May need to adjust environment settings/update java/maven
 
-## React.js for frontend
+Note: May need to adjust environment settings/update java/maven
 
-To access API, add localhost:8080 as proxy
-cd app `npm start`
-May need to npm i to install packages
+## Frontend: React.js
+
+In /app we launch a frontend UI so users can view, manipulate, and compare DNA sequences.
+
 Served at http://localhost:3000
+
+`npm start`
+
+Note: May need to cd app and npm i to install packages
 
 ## TODO
 
-Remove excess bulk from starter packs
-Namings could be better
+[x] Link API
+
+[x] Display DNA sequences
+
+[x] Add threshold logic
+
+[x] Publish to Github
+
+[ ] Add user interactions
+
+[ ] API: /post endpoint for users to upload sequences
+
+[ ] Formatting: Better user display
+
+[ ] Add robust testing
